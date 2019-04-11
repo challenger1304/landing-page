@@ -22,12 +22,32 @@
 				width: 256px;
 				height: 256px;
 			}
+			input,
+			textarea,
+			select,
+			button {
+				font-family: inherit;
+				font-size: inherit;
+				font-weight: inherit;
+				border: 0;
+				background: transparent;
+			}
+			form {
+				margin-top: 32px;
+			}
+			input {
+				border-bottom: 2px solid #b00;
+			}
 		</style>
 	</head>
 	<body>
 		<div>
 			<img src="./avatar_darlor_01_grey.png" alt="Darlor-Logo" />
 			<h1>newt.darlor.de</h1>
+			<form method="get" action="https://google.com/search">
+				<input type="text" name="q" placeholder="Search the web" />
+				<button type="submit">Search</button>
+			</form>
 			<p>Privater Webserver</p>
 		</div>
 	</body>
