@@ -13,19 +13,28 @@
 			background: #fff
 			grey: #4f4f4
 			*/
-			html, body {
+			html {
+				height: 100%;
+				width: 100%;
+			} 
+			body {
 				color: #333f48;
 				background-color: #fff;
 				font-family: Raleway, sans-serif;
 				display: flex;
 				height: 100%;
 				align-items: center;
-				justify-content: center;
+				justify-content: space-around;
 			}
 			div {
 				flex: 0 0 auto;
 				text-align: center;
 				font-size: 2em;
+			}
+			div:last-of-type {
+				text-align: right;
+				flex: 0 0 auto;
+				padding-right: 8px;
 			}
 			img {
 				width: 256px;
@@ -68,6 +77,30 @@
 			svg {
 				width: 32px;
 			}
+			h2 {
+				font-size: 1em;
+			}
+			#vhostsList > li {
+				list-style-type: none;
+			}
+			#vhostsList > li > a {
+				transition: all .35s cubic-bezier(.25,.8,.25,1);
+				text-decoration: none;
+				color: #888;
+			}
+			#vhostsList > li > a:active,
+			#vhostsList > li > a:focus,
+			#vhostsList > li > a:hover {
+				color: #e81123;
+			}
+			@media (orientation: portrait) {
+				body {
+					flex-direction: column;
+				}
+				div:last-of-type {
+					text-align: center;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -80,5 +113,10 @@
 				</button>
 			</form>
 		</div>
+		<div>
+			<h2>Available Domains<br />on this Server</h2>
+			<ul id="vhostsList"></ul>
+		</div>
+		<script src="update.js"></script>
 	</body>
 </html>
