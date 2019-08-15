@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Newt-Server</title>
+		<title>Vonmählen | Webserver</title>
 		<meta charset="utf-8">
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 		<style>
 			/*
 			--COLOR THEME--
-			accent: #e81123
+			accent: #333f48
 			font: #888
-			background: #272727
+			background: #fff
 			grey: #4f4f4
 			*/
 			html, body {
-				color: #e81123;
-				background-color: #272727;
-				font-family: Rubik, sans-serif;
+				color: #333f48;
+				background-color: #fff;
+				font-family: Raleway, sans-serif;
 				display: flex;
 				height: 100%;
 				align-items: center;
@@ -47,10 +47,11 @@
 				margin-top: 32px;
 			}
 			input {
-				border-bottom: 2px solid #e81123;
+				border-bottom: 2px solid #333f48;
 			}
 			button {
-				background-color: #4f4f4f;
+			    color: #333f48;
+				background-color: #fff;
 				border-radius: 8px;
 				padding: 16px;
 				line-height: 16px;
@@ -60,8 +61,8 @@
 			}
 			button:hover,
 			button:focus {
-				color: #272727;
-				background-color: #e81123;
+				color: #fff;
+				background-color: #333f48;
 				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 			}
 			svg {
@@ -71,15 +72,13 @@
 	</head>
 	<body>
 		<div>
-			<img src="./avatar_darlor_01_grey.png" alt="Darlor-Logo" />
+			<img src="./favicon.png" alt="Vonmaehlen-Logo" />
 			<form method="get" action="https://google.com/search">
 				<input type="text" name="q" placeholder="Search the web" autofocus="autofocus"/>
 				<button type="submit">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
 				</button>
 			</form>
-			<h1>newt.darlor.de</h1>
-			<p>Privater Webserver</p>
 		</div>
 	</body>
 </html>
